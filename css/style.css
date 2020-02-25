@@ -1,0 +1,182 @@
+body{
+background-color: rgba(255, 244, 185, 0.411);
+height: 1200px;
+}
+
+/* Encabezado */
+/* iconos de los datos de contacto */
+.ic{
+    font-size:3vh;
+    margin-right: 2vh;
+    align-items: center;
+}
+th{
+    text-align: center;
+}
+/* Menu principal */
+.navbar{
+    background-color: rgb(195, 97, 58) !important;
+    z-index: 2;
+}
+.nav-link{
+    font-size: 1.5em;
+    color:white !important;  
+}
+.principal{
+    height: 60vh;
+}
+#imgPrin{
+    position: absolute;
+    height: 60vh;
+}
+.lista1{
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: bold;
+    color:rgb(195, 97, 58);
+    text-align: center;
+}
+/* Botón home */
+.subir{
+    display:inline-block ;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    bottom:40px;
+    right:40px;
+    font-size: 5vh;
+    color: rgba(165, 42, 42, 0.541);
+}
+#icHome{
+    border: solid 2px brown;
+    border-radius: 50%;
+    padding:2vh;
+    background-color: white;
+    opacity:0.3;
+    z-index: 2;
+}
+#icHome:hover{
+    opacity: 0.9;
+}
+/* Main */
+
+.tituloSeccion{
+    height: 10vh;
+    background-color: rgb(195, 97, 58) !important;
+    color: white;
+    width: 110%;
+    padding-left: 10vh;
+    justify-content: end;
+}
+.navHerra{
+    display:show;
+    background-color:rgb(195, 97, 58);
+    
+}
+.btn-secondary{
+    color: #007bff !important;
+    background-color: rgb(231, 231, 231) !important;
+    font-size: 1.5em;
+    height: 5vh;
+    width: 18vh;
+    
+}
+#llaves{
+    display:show;
+}
+#medicion{
+    display:none;
+}
+#autos{
+    display:none;
+}
+#pinzas{
+    display:none;
+}
+
+/* Nosotros */
+#marcas{
+    height: 30vh;
+}
+.proveedores{
+    width: 100%;
+}
+
+/* Contacto */
+#contacto{
+    height: 85vh;
+}
+#imgContacto{
+    position: absolute;
+    height: 85vh;
+}
+#Cont{
+    background-color: white;
+    opacity:0.95;
+}
+.form-group{
+    margin: 5vh;
+}
+.bigicon{
+    margin-left: -2vh;
+}
+.header {
+    color: rgb(195, 97, 58);
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color:rgb(195, 97, 58);
+}
+
+/* Pié de página */
+.pie{
+    background-color: black;
+    color: lightgray;
+    height: 15vh;
+}
+.textoPie{
+    font-size: 0.8em;
+    text-align: center;
+}
+.qr{
+    height: 15vh;
+}
+@media screen and (max-width:775px){
+    #accordionExample{
+        display:none;
+    }
+    .tituloSeccion{
+        padding-left: 10px;
+    }
+    .btn-secondary{
+        font-size: 1em;
+    }
+    #marcas{
+        height: 10vh;
+    }
+    .accMd{
+        display:none;
+    }
+    .textVision{
+        height: 22vh;
+    }
+    .contacto{
+        justify-content: center !important;
+        height: 65vh;
+    }
+    .navbar{
+        display:none;
+    }
+    #navProd{
+        display: none;
+    }
+
+}
+@media screen and (min-width:774px){
+    #navProductos{
+        display:none;
+    }
+}

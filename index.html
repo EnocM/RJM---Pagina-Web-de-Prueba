@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <!-- Encabezado -->
+        <div>
+            <!-- Título -->
+            <div id="encabezado" class="row justify-content-between align-items-center mb-2">
+                <div id="logo" class="col-12 col-md-7 col-md-offset-1 col-lg-6 col-lg-offset-1">
+                    <img class="img-fluid mt-2" src="img/Logo.jpg" alt="">
+                </div>
+
+                <div id="datos" class="col-12 col-md-4 col-lg-4 offset-1 justify-content-sm-center">
+                    <table>
+                        <tr>
+                            <th><i class="ic far fa-envelope"></i></td>
+                            <td>correo@dominio.com</td>
+                        </tr>
+                        <tr>
+                            <th><i class="ic fas fa-mobile-alt"></i></td>
+                            <td>011-5555-6363</td>
+                        </tr>
+                        <tr>
+                            <th><i class="ic fab fa-instagram"></i></td>
+                            <td>@rjmhandtools</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="burguer navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-auto" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#productos">Productos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vision">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tituloContacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Imagen principal -->
+            <div class="row principal mt-2 accMd">
+                <div><img id="imgPrin" class="img-fluid w-100
+                    " src="img/woodworking-hand-tools.jpg" alt=""></div>
+                <div class="row justify-content-around">
+                    <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" class="col-12 col-md-6 col-lg-2 lista1 mt-5 ml-2 align-self-start"
+                        style="background-color:rgba(255, 236, 185, 0.7);">Primeras marcas</div>
+
+                    <div data-aos="fade-right" data-aos-delay="150" data-aos-easing="ease-in-out" class="col-12 col-md-6 col-lg-3 mr-2 accMd lista1 align-self-center"
+                        style="background-color:rgba(255, 236, 185, 0.7);">Atención personalizada</div>
+
+                    <div data-aos="fade-left" data-aos-delay="450" data-aos-easing="ease-in-out" class="col-12 col-md-6 col-lg-2 lista1 mt-5 align-self-center"
+                        style="background-color:rgba(255, 236, 185, 0.7);">Garantía siempre</div>
+
+                    <div data-aos="fade-left" data-aos-delay="600" data-aos-easing="ease-in-out" class="col-12 col-md-6 col-lg-2 accMd lista1 align-self-end mb-5"
+                        style="background-color:rgba(255, 236, 185, 0.7);">Stock permanente</div>
+                </div>
+            </div>
+        </div>
+        <!-- Boton home -->
+        <span>
+            <a href="#encabezado"><i id="icHome" class="subir fas fa-home align-self-end"></i></a>
+        </span>
+
+        <!-- Slides -->
+        <main>
+            <!-- Encabezados Productos -->
+            <div id="productos">
+                <div class="row justify-content-between align-items-center mt-2 mb-2 tituloSeccion col-12">
+                    <h2 id="navProd" class="col-4">Productos</h2>
+                    <!-- Menu Productos para md-->
+                    <ul id="navProductos" class="nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle h2" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Productos</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="mostrar('llaves')" href="#productos">Llaves</a>
+                                <a class="dropdown-item" onclick="mostrar(medicion)" href="#productosSlides">Medición</a>
+                                <a class="dropdown-item" onclick="mostrarAutos()" href="#productosSlides">Automotor</a>
+                                <a class="dropdown-item" onclick="mostrarLlaves()" href="#productosSlides">Pinzas</a>
+                                <a class="dropdown-item" onclick="mostrarLlaves()"
+                                    href="#productosSlides">Destornilladores</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Menu lg y Productos -->
+            <div class="row justify-content-center">
+                <!-- Menu Acordeón para lg -->
+                <div id="accordionExample" class="col-5 col-md-2 accordion ml-3">
+                    <!-- Sección Llaves -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" onclick="mostrarLlaves()" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">Llaves</button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La más alta calidad. Para trabajo pesado. Consulte otros modelos
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección medicion -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" onclick="mostrarMedicion()" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Instr. Medición
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Instrumentos de alta calidad. Consulte otras marcas y modelos
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección autos -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" onclick="mostrarAutos()" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Automotor
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Herramientas para trabajo pesado y contínuo. Consulte otros productos
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección pinzas -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" onclick="mostrarPinzas()" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Pinzas
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La más alta calidad. Para todo tipo de trabajo. Consulte otros modelos
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección Destornilladores -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" onclick="mostrarDestornilladores()" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Destornilladores
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Linea electricista, alta tensión, familiar o profesional
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seccion Llaves -->
+                <div class="col-9 owl-carousel owl-theme" id="llaves">
+                    <!-- llaves combinadas en estuche -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/combinada estuche/lla-7177-bremen-llaves-combinadas-en-juego-con-estuche-19-llaves_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinada estuche/lla-7177-bremen-llaves-combinadas-en-juego-con-estuche-19-llaves_2.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinada estuche/lla-7177-bremen-llaves-combinadas-en-juego-con-estuche-19-llaves_3.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselLlavesEstuche" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselLlavesEstuche" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Juego Llaves Combinadas</h5>
+                                <p class="card-text">En estuche de tela. <br> Medidas: 6mm a 24mm
+                                    <br>Material:
+                                    Cromo-Vanadio</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Llave combinada Crique-->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/combinadaCrique/lla-4749-bremen-llave-combinada-con-crique_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinadaCrique/lla-4749-bremen-llave-combinada-con-crique_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinadaCrique/lla-4749-bremen-llave-combinada-con-crique_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Llave combinada crique</h5>
+                                <p class="card-text">Marca: Bremen <br>Disponible de 8mm a 19mm
+                                    <br>Material: Cromo-Vanadio.</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Crique con Arrime -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselCriqueArrime" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/criqueArrime/boc-3500-bremen-llave-crique-doble-expulsor-arrime-manual_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/criqueArrime/boc-3500-bremen-llave-crique-doble-expulsor-arrime-manual_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/criqueArrime/boc-3500-bremen-llave-crique-doble-expulsor-arrime-manual_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Llave crique</h5>
+                                <p class="card-text">Crique con arrime. <br>Cabezal de 1/2 <br>Marca: Bremen
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Llave crique común -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/CriqueMedia/boc-6615-bremen-llave-crique-encastre-1-2_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/CriqueMedia/boc-6615-bremen-llave-crique-encastre-1-2_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/CriqueMedia/boc-6615-bremen-llave-crique-encastre-1-2_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Llave Crique standart</h5>
+                                <p class="card-text">Cabezal de 1/2 pulgada. <br>Mango ergonómico. <br> Linea
+                                    económica
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Estriadas con codo -->
+                    <div class="item">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/estriadas/24724_main3_1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/estriadas/lla-5812-bremen-llave-estriada-multiple_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/estriadas/lla-5812-bremen-llave-estriada-multiple_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Llave estriada múltiple</h5>
+                                <p class="card-text">Varias medidas. <br>En milímetros. <br>Material:
+                                    Cromo-Vanadio
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- llaves combinadas sueltas -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/01llaves/combinada/24724_main3_1.jpg" class="d-block w-100 h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinada/juego-llaves-combinadas-bremen-6mm-a-13mm.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/01llaves/combinada/llave-combinada.jpg" class="d-block w-100 h-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselLlavesEstuche" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselLlavesEstuche" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Llaves en Pulgadas</h5>
+                                <p class="card-text">Marca: Bremen <br> Medidas: 1/4 a 1"
+                                    <br>Material:
+                                    Cromo-Vanadio</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Medición -->
+                <div class="col-9 owl-carousel owl-theme" id="medicion">
+                    <!-- Calibre -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/calibre/var-7117-calibre-acero-mecanico_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/calibre/var-7117-calibre-acero-mecanico_2.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/calibre/var-7117-calibre-acero-mecanico_3.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Calibre milimétrico</h5>
+                                <p class="card-text">Profesional. <br> Rango: 0mm a 150mm
+                                    <br>Material: Acero mecánico</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cinta metrica -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/cinta/var-6903-bremen-cinta-metrica-heavy-duty_2_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/cinta/var-6903-bremen-cinta-metrica-heavy-duty_3_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/cinta/var-6903-bremen-cinta-metrica-heavy-duty_4_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cinta Métrica</h5>
+                                <p class="card-text">Marca: Bremen <br>Largo: 5 metros
+                                    <br>Apto Trabajo Pesado.</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Medidor laser -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselCriqueArrime" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/medidor laser/var-7028-bremen-medidor-laser_1_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/medidor laser/var-7028-bremen-medidor-laser_3_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/medidor laser/var-7028-bremen-medidor-laser_4_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Medidor Láser</h5>
+                                <p class="card-text">Tecnología alemana. <br>Hasta 50 metros <br>Marca: Bremen </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nivel aluminio -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/nivel/var-7163-bremen-nivel-burbuja-aluminio_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/nivel/var-7163-bremen-nivel-burbuja-aluminio_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/nivel/var-7163-bremen-nivel-burbuja-aluminio_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nivel de Aluminio</h5>
+                                <p class="card-text">Horizontal, vertical y 45°. <br>Base rectificada. <br> Marca:
+                                    Bremen
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nivel laser -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/nivelLaser/con-7287-bremen-laser-dos-lineas-360_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/nivelLaser/con-7287-bremen-laser-dos-lineas-360_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/nivelLaser/con-7287-bremen-laser-dos-lineas-360_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nivel Láser</h5>
+                                <p class="card-text">Tecnología alemana. <br>Autonivelante. <br>Marca: Bremen
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Escuadra aluminio -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/02medicion/escuadra/bremen.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/02medicion/escuadra/var-6823-bremen-escuadra-aluminio-profesional_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Escuadra de aluminio</h5>
+                                <p class="card-text">Marca: Bremen <br> Largo: 30cms"
+                                    <br>Material:
+                                    Aluminio</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Autos -->
+                <div class="col-9 owl-carousel owl-theme" id="autos">
+                    <!-- Camilla -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/camilla/aut3695-bremen-camilla-profesional-para-mecanico_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/camilla/aut3695-bremen-camilla-profesional-para-mecanico_2.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/camilla/aut3695-bremen-camilla-profesional-para-mecanico_3.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Camilla profesional</h5>
+                                <p class="card-text">Polipropileno alto impacto. <br> Diseño ergonómico
+                                    <br>Ruedas alto transito</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Llave neumática-->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/neumaticaImpacto/neu-7132-bremen-llave-de-impacto-en-kit_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/neumaticaImpacto/neu-7132-bremen-llave-de-impacto-en-kit_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/neumaticaImpacto/neu-7132-bremen-llave-de-impacto-en-kit_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Neumática alto impacto</h5>
+                                <p class="card-text">Marca: Bremen <br>Regulación de torque
+                                    <br>Apto: Trabajo pesado.</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pinza abrazadera -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselCriqueArrime" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/pinzaAbrazaderas/aut-6242-bremen-pinza-para-abrazaderas-con-cable-flexible_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/pinzaAbrazaderas/aut-6242-bremen-pinza-para-abrazaderas-con-cable-flexible_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/pinzaAbrazaderas/aut-6242-bremen-pinza-para-abrazaderas-con-cable-flexible_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pinza para abrazaderas</h5>
+                                <p class="card-text">Con cable extensión. <br>Apertura máx: 50mm <br>Marca: Bremen
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Saca rotulas -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/SacaRotulas/aut-6725-bremen-extractor-de-rotula-universal-tipo-sapo_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/SacaRotulas/aut-6725-bremen-extractor-de-rotula-universal-tipo-sapo_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/SacaRotulas/aut-6725-bremen-extractor-de-rotula-universal-tipo-sapo_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Saca Rótulas</h5>
+                                <p class="card-text">Marca: Bremen <br>Rosca de acero templado <br> Material:
+                                    Cromo-vanadio
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extractor sonda lambda -->
+                    <div class="item">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/extractorSondaLambda/aut-6726-bremen-juego-de-extractor-de-sonda-lambda-bulbo-e-inyectores_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/extractorSondaLambda/bremen.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Juegos de extractores</h5>
+                                <p class="card-text">Sonda Lambda - Inyectores. <br>Marca: Bremen <br>Material:
+                                    Acero templado
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Extracto filtro cadena -->
+                    <div class="item">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_2.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_3.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Extractor filtro aceite</h5>
+                                <p class="card-text">Marca: Bremen <br> Sistema a cadena
+                                    <br>Alta durabilidad</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Pinzas -->
+                <div class="col-9 owl-carousel owl-theme" id="pinzas">
+                    <!-- Alicate hogar -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/04pinzas/AlicateLineaHogar/ayp-7041-bremen-alicate-corte-oblicuo-haus_1_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/AlicateLineaHogar/ayp-7041-bremen-alicate-corte-oblicuo-haus_2_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/AlicateLineaHogar/ayp-7041-bremen-alicate-corte-oblicuo-haus_3_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Alicate corte oblicuo</h5>
+                                <p class="card-text">Linea hogar. <br> Diseño ergonómico
+                                    <br>Marca: Bremen</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alicate frontal-->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/04pinzas/Frontal electronica/ayp-6569-bremen-alicate-corte-frontal-electronica_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/Frontal electronica/ayp-6569-bremen-alicate-corte-frontal-electronica_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/Frontal electronica/ayp-6569-bremen-alicate-corte-frontal-electronica_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Alicate corte Frontal</h5>
+                                <p class="card-text">Linea electrónica <br>Marca: Bremen
+                                    <br>Corte profesional.</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pico de Loro -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselCriqueArrime" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/04pinzas/loroProfesional/ayp-3958-bremen-pinza-pico-de-loro-con-doble-cremallera_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/loroProfesional/ayp-3958-bremen-pinza-pico-de-loro-con-doble-cremallera_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/loroProfesional/ayp-3958-bremen-pinza-pico-de-loro-con-doble-cremallera_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pinza pico de loro</h5>
+                                <p class="card-text">Profesional. <br>Trabajo pesado <br>Marca: Bremen
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Saca rotulas -->
+                    <div class="item">
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/04pinzas/segeerMultiple/ayp-4231-bremen-pinza-segeer-12-en-1_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/segeerMultiple/ayp-4231-bremen-pinza-segeer-12-en-1_2.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/04pinzas/segeerMultiple/ayp-4231-bremen-pinza-segeer-12-en-1_3.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pinza Segeer</h5>
+                                <p class="card-text">Marca: Bremen <br>Acero templado <br> 12 en 1
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extractor sonda lambda -->
+                    <div class="item">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/extractorSondaLambda/aut-6726-bremen-juego-de-extractor-de-sonda-lambda-bulbo-e-inyectores_1.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/extractorSondaLambda/bremen.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Juegos de extractores</h5>
+                                <p class="card-text">Sonda Lambda - Inyectores. <br>Marca: Bremen <br>Material:
+                                    Acero templado
+                                </p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Extracto filtro cadena -->
+                    <div class="item">
+
+                        <div class="card" style="width: 18rem;">
+                            <div id="carouselLlavesSueltas" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_1.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_2.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/03lineaAutomotor/filtroAceiteCadena/lla-2910-bremen-llave-saca-filtro-a-cadena_3.jpg"
+                                            class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-start justify-content-end">
+                                <h5 class="card-title">Extractor filtro aceite</h5>
+                                <p class="card-text">Marca: Bremen <br> Sistema a cadena
+                                    <br>Alta durabilidad</p>
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Acerca de la empresa -->
+        <div id="vision" class="">
+            <div class="row justify-content-start align-items-center mt-2 mb-2 tituloSeccion col-12">
+                <h2>Nuestra Visión</h2>
+            </div>
+            <div class="row bg-secondary textVision justify-content-between align-items-center">
+                <div class="col-3 accMd align-self-start p-0">
+                    <img src="img/Shop.jpg" alt="" srcset="">
+                </div>
+                <div class="col-12 col-md-6 text-white text-center">
+                    <h5 class="m-1 p-2 text-center">
+                        Somos una empresa joven pero con una trayectoria de 15 años en el rubro, preparados para atender
+                        la
+                        Industria Metalúrgica, Automotriz, Alimenticia, Construcción.
+                        Trabajamos solamente con las marcas más importantes en el país.</h5>
+                </div>
+                <div class="col-3 accMd align-self-end">
+                    <img src="img/Shop1.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Proveedores -->
+        <div id="marcas" class="row justify-content-around mt-5 mb-5">
+            <div class="col-2"><img class="proveedores align-items-start" src="img/Marcas/Bahco_logo.jpg" alt=""></div>
+            <div class="col-2 align-self-end"><img class="proveedores" src="img/Marcas/bremen.jpg" alt=""></div>
+            <div class="col-2"> <img class="proveedores" src="img/Marcas/hilti-logo.jpg" alt=""></div>
+            <div class="col-2 align-self-end"> <img class="proveedores" src="img/Marcas/bosch.jpg" alt=""></div>
+            <div class="col-2"> <img class="proveedores" src="img/Marcas/DeWalt_Logo.jpg" alt=""></div>
+            <div class="col-2 align-self-end"> <img class="proveedores" src="img/Marcas/makita-logo.jpg" alt=""></div>
+        </div>
+
+        <!--  Contacto  -->
+        <div>
+            <!-- Titulo Seccion -->
+            <div id="tituloContacto" class="row justify-content-start align-items-center mt-2 mb-2 tituloSeccion col-12">
+                <h2>Contacto</h2>
+            </div>
+            <!-- Formulario -->
+            <div id="contacto">
+                <!-- imagen de fondo -->
+                <div>
+                    <img id="imgContacto" class="img-fluid w-100" src="img/Contacto.jpg" alt="" srcset="">
+                </div>
+                <!-- Formulario de contacto -->
+                <div data-aos="fade-left" data-aos-delay="1000" data-aos-easing="ease-in-out" class="row contacto justify-content-end">
+                    <div id="Cont" class="col-10 col-offset-1 col-md-6">
+                        <div class="well well-sm mt-2 ml-5">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <!-- Nombre -->
+                                    <div class="row form-group">
+                                        <span class="col-1 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-9 col-md-8">
+                                            <input id="nombre" name="fname" type="text" placeholder="Nombres"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Apellido -->
+                                    <div class="row form-group">
+                                        <span class="col-1 col-md-offset-2 text-center"><i
+                                                class="fa fa-user bigicon"></i></span>
+                                        <div class="col-9 col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Apellidos"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Correo -->
+                                    <div class="row form-group">
+                                        <span class="col-1 col-md-offset-2 text-center"><i
+                                                class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-9 col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Correo electrónico"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Telefono -->
+                                    <div class="row form-group">
+                                        <span class="col-1 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-9 col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Teléfono"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Mensaje -->
+                                    <div class="row form-group">
+                                        <span class="col-1 col-md-offset-2 text-center"><i
+                                                class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-9 col-md-8">
+                                            <textarea class="form-control" id="message" name="message"
+                                                placeholder="Escribanos su mensaje. Le responderemos dentro de las 48 horas"
+                                                rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de pagina -->
+        <footer>
+            <br>
+            <hr><br>
+            <div class="row pie align-items-center">
+                <div class="col-1 col-md-5"></div>
+                <div class="col-4 col-md-3 textoPie mb-3">Designed and build by @EnocM <br>All rights reserved</div>
+                <div class="col-4 col-md-3 qr mb-3"><img class="img-fluid qr" src="img/frame.png" alt="" srcset="">
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/6fd0046796.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="css/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayHoverPause: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: false
+                },
+                775: {
+                    items: 2,
+                    dots: false
+                },
+                1230: {
+                    items: 3,
+                    dots: true
+                },
+                // 960: {
+                //     items: 4,
+                //     dots: true
+                // },
+                1600: {
+                    items: 4,
+                    dots: true
+                }
+            }
+
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
