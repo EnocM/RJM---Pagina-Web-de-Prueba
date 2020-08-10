@@ -1,3 +1,15 @@
+
+var array = ["uno", "dos", "tres", "cuatro"];
+
+function last(array) {
+	if (array == null) 
+      return void 0;
+    if (n == null) 
+      return array[0];
+    else
+	  return array.length-1
+  }
+
 function mostrar(){
     document.getElementById("llaves").style.display = 'none';
     document.getElementById("medicion").style.display = 'none';
